@@ -60,11 +60,11 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
 📦 industrial-data-etl-pipeline
  ┣ 📂 dados
  ┃ ┗ producao_dados.xlsx
+ ┣ 📂 output
+ ┃ ┣ producao.db
+ ┃ ┗ producao_limpa.xlsx
  ┣ 📂 script
  ┃ ┗ limpeza.py
- ┣ 📂 output
- ┃ ┣ producao_limpa.xlsx
- ┃ ┗ producao.db
  ┗ README.md
 ```
 
