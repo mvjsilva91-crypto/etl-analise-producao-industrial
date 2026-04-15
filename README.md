@@ -1,0 +1,126 @@
+# etl-analise-producao-industrial
+
+Projeto de ETL (Extract, Transform, Load) desenvolvido com foco em análise de dados industriais, utilizando **Python** e **SQL** para processamento, tratamento e armazenamento de dados.
+
+---
+
+## 📊 Objetivo
+
+Simular um cenário real de indústria, onde dados de produção são coletados via Excel, tratados e armazenados em banco de dados para análise e geração de insights.
+
+---
+
+## 🧩 Tecnologias utilizadas
+
+* 🐍 Python
+* 🗄️ SQL (SQLite)
+* 📊 Pandas
+* 🔗 SQLAlchemy
+* 📁 Excel (entrada e saída de dados)
+
+---
+
+## ⚙️ Funcionalidades
+
+✔️ Leitura de dados a partir de arquivo Excel
+✔️ Tratamento de dados inconsistentes (nulos, formatos incorretos, valores inválidos)
+✔️ Padronização de informações (ex: nomes de máquinas)
+✔️ Criação de métricas (eficiência de produção)
+✔️ Análise de dados (agrupamentos e estatísticas)
+✔️ Exportação de dados tratados para novo arquivo Excel
+✔️ Armazenamento em banco de dados SQLite
+✔️ Consultas SQL para geração de insights
+
+---
+
+## 🔄 Pipeline ETL
+
+1. **Extract (Extração)**
+
+   * Leitura de dados do Excel
+
+2. **Transform (Transformação)**
+
+   * Limpeza de dados
+   * Tratamento de valores nulos
+   * Conversão de datas
+   * Remoção de dados inválidos
+   * Criação de métricas
+
+3. **Load (Carga)**
+
+   * Inserção dos dados no banco SQLite
+   * Geração de relatórios e consultas SQL
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+📦 industrial-data-etl-pipeline
+ ┣ 📂 dados
+ ┃ ┗ producao_dados.xlsx
+ ┣ 📂 script
+ ┃ ┗ limpeza.py
+ ┣ 📂 output
+ ┃ ┣ producao_limpa.xlsx
+ ┃ ┗ producao.db
+ ┗ README.md
+```
+
+---
+
+## 📈 Exemplos de análises
+
+* Produção total por máquina
+* Produção por turno
+* Média de tempo parado
+* Eficiência operacional
+
+---
+
+## 🧠 Aprendizados
+
+Este projeto permitiu aprofundar conhecimentos em:
+
+* Manipulação de dados com Python
+* Processos de ETL
+* Integração com banco de dados
+* Escrita e execução de consultas SQL
+* Organização de projetos de dados
+
+---
+
+## 🚀 Como executar
+
+1. Instale as dependências:
+
+```
+pip install pandas openpyxl sqlalchemy
+```
+
+2. Execute o script:
+
+```
+python limpeza.py
+```
+
+3. Resultados:
+
+* Arquivo Excel tratado será gerado
+* Banco de dados SQLite será criado automaticamente
+
+---
+
+## 💡 Próximos passos
+
+* Criação de dashboard para visualização dos dados
+* Integração com API backend
+* Automação do pipeline
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por Marcos Vinícius
+
