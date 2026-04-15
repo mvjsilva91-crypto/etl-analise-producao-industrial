@@ -1,4 +1,4 @@
-# etl-analise-producao-industrial
+# 🚀 etl-analise-producao-industrial
 
 Projeto de ETL (Extract, Transform, Load) desenvolvido com foco em análise de dados industriais, utilizando **Python** e **SQL** para processamento, tratamento e armazenamento de dados.
 
@@ -57,7 +57,7 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
 ## 📁 Estrutura do projeto
 
 ```
-📦 industrial-data-etl-pipeline
+📦 etl-analise-producao-industrial
  ┣ 📂 dados
  ┃ ┗ producao_dados.xlsx
  ┣ 📂 output
@@ -76,6 +76,47 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
 * Produção por turno
 * Média de tempo parado
 * Eficiência operacional
+
+---
+
+## 🗄️ Banco de Dados
+
+O projeto utiliza um banco de dados SQLite para armazenar os dados tratados.
+
+O banco é criado automaticamente ao executar o script Python, não sendo necessária nenhuma configuração manual.
+
+📂 Arquivo gerado:
+
+* `producao.db`
+
+📍 Local:
+
+* O arquivo será salvo na mesma pasta onde o script for executado ou conforme o caminho definido no código.
+
+---
+
+## 🔍 Como visualizar o banco
+
+Para visualizar os dados, recomenda-se o uso do software:
+
+**DB Browser for SQLite**
+
+Passos:
+
+1. Abrir o programa
+2. Clicar em “Open Database”
+3. Selecionar o arquivo `producao.db`
+4. Acessar a aba “Browse Data”
+
+---
+
+## 💻 Consulta SQL (exemplo)
+
+```sql
+SELECT maquina, SUM(producao) as total
+FROM producao
+GROUP BY maquina;
+```
 
 ---
 
@@ -123,4 +164,3 @@ python limpeza.py
 ## 👨‍💻 Autor
 
 Desenvolvido por Marcos Vinícius
-
