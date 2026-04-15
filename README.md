@@ -63,10 +63,11 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
  ┣ 📂 dados
  ┃ ┗ producao_dados.xlsx
  ┣ 📂 output
- ┃ ┣ producao.db
+ ┃ ┣ eficiencia_media_maquina.png
+   ┣ producao.db
  ┃ ┣ producao_limpa.xlsx
- ┃ ┣ grafico_producao_maquina.png
- ┃ ┗ grafico_eficiencia.png
+ ┃ ┣ producao_total_maquinas.png
+ ┃ ┗ producao_turno.png
  ┣ 📂 script
  ┃ ┗ limpeza.py
  ┗ README.md
