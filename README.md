@@ -16,6 +16,7 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
 * 🗄️ SQL (SQLite)
 * 📊 Pandas
 * 🔗 SQLAlchemy
+* 📈 Matplotlib
 * 📁 Excel (entrada e saída de dados)
 
 ---
@@ -27,6 +28,7 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
 ✔️ Padronização de informações (ex: nomes de máquinas)
 ✔️ Criação de métricas (eficiência de produção)
 ✔️ Análise de dados (agrupamentos e estatísticas)
+✔️ Geração de gráficos para visualização de dados
 ✔️ Exportação de dados tratados para novo arquivo Excel
 ✔️ Armazenamento em banco de dados SQLite
 ✔️ Consultas SQL para geração de insights
@@ -62,7 +64,9 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
  ┃ ┗ producao_dados.xlsx
  ┣ 📂 output
  ┃ ┣ producao.db
- ┃ ┗ producao_limpa.xlsx
+ ┃ ┣ producao_limpa.xlsx
+ ┃ ┣ grafico_producao_maquina.png
+ ┃ ┗ grafico_eficiencia.png
  ┣ 📂 script
  ┃ ┗ limpeza.py
  ┗ README.md
@@ -70,12 +74,25 @@ Simular um cenário real de indústria, onde dados de produção são coletados 
 
 ---
 
-## 📈 Exemplos de análises
+## 📈 Visualização de Dados
 
-* Produção total por máquina
-* Produção por turno
-* Média de tempo parado
-* Eficiência operacional
+O projeto gera gráficos para análise dos dados:
+
+* 📊 Produção total por máquina
+* 📊 Produção por turno
+* 📊 Eficiência média por máquina
+
+---
+
+## 📊 Exemplos de visualização
+
+### Produção por Máquina
+
+![Produção por Máquina](output/grafico_producao_maquina.png)
+
+### Eficiência Média por Máquina
+
+![Eficiência Média](output/grafico_eficiencia.png)
 
 ---
 
@@ -128,6 +145,7 @@ Este projeto permitiu aprofundar conhecimentos em:
 * Processos de ETL
 * Integração com banco de dados
 * Escrita e execução de consultas SQL
+* Visualização de dados com gráficos
 * Organização de projetos de dados
 
 ---
@@ -137,7 +155,7 @@ Este projeto permitiu aprofundar conhecimentos em:
 1. Instale as dependências:
 
 ```
-pip install pandas openpyxl sqlalchemy
+pip install pandas openpyxl sqlalchemy matplotlib
 ```
 
 2. Execute o script:
@@ -150,12 +168,13 @@ python limpeza.py
 
 * Arquivo Excel tratado será gerado
 * Banco de dados SQLite será criado automaticamente
+* Gráficos serão exibidos na tela
 
 ---
 
 ## 💡 Próximos passos
 
-* Criação de dashboard para visualização dos dados
+* Criação de dashboard interativo
 * Integração com API backend
 * Automação do pipeline
 
