@@ -89,11 +89,11 @@ O projeto gera gráficos para análise dos dados:
 
 ### Produção por Máquina
 
-![Produção por Máquina](output/grafico_producao_maquina.png)
+![Produção por Máquina](output/eficiencia_media_maquina.png)
 
 ### Eficiência Média por Máquina
 
-![Eficiência Média](output/grafico_eficiencia.png)
+![Eficiência Média](output/producao_turno.png)
 
 ---
 
